@@ -1,0 +1,724 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="219.82919mm"
+   height="205.31744mm"
+   viewBox="0 0 778.92234 727.50275"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="Блок-схема.svg"
+   inkscape:export-filename="/home/jenyay/sync/wiki/Преподавание-wiki/Лекции/Моделирование антенн и устройств СВЧ/2. Постановка задачи. FDTD/__attach/img/Блок-схема.png"
+   inkscape:export-xdpi="300"
+   inkscape:export-ydpi="300">
+  <defs
+     id="defs4">
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="marker11986"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Mend">
+      <path
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
+         id="path11988"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker11896"
+       style="overflow:visible"
+       inkscape:isstock="true"
+       inkscape:collect="always">
+      <path
+         inkscape:connector-curvature="0"
+         id="path11898"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="marker11810"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Mend"
+       inkscape:collect="always">
+      <path
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
+         id="path11812"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker11732"
+       style="overflow:visible"
+       inkscape:isstock="true"
+       inkscape:collect="always">
+      <path
+         inkscape:connector-curvature="0"
+         id="path11734"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="marker11658"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Mend"
+       inkscape:collect="always">
+      <path
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
+         id="path11660"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker11590"
+       style="overflow:visible"
+       inkscape:isstock="true"
+       inkscape:collect="always">
+      <path
+         inkscape:connector-curvature="0"
+         id="path11592"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="marker11528"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Mend">
+      <path
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
+         id="path11530"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="marker11472"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Mend">
+      <path
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
+         id="path11474"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="marker11340"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Mend"
+       inkscape:collect="always">
+      <path
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
+         id="path11342"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Mend"
+       style="overflow:visible"
+       inkscape:isstock="true"
+       inkscape:collect="always">
+      <path
+         id="path10412"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Send"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Send"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path10418"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         transform="matrix(-0.2,0,0,-0.2,-1.2,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <symbol
+       id="Process">
+      <title
+         id="title6204">Process</title>
+      <desc
+         id="desc6206">Any processing function.</desc>
+      <rect
+         x="15"
+         y="35"
+         width="120"
+         height="80"
+         style="stroke-width:2"
+         id="rect6208" />
+    </symbol>
+    <symbol
+       id="LoopLimitBegin">
+      <title
+         id="title6454">Loop Limit Begin</title>
+      <desc
+         id="desc6456">Start of a loop.</desc>
+      <path
+         d="m 15,75 20,-40 80,0 20,40 0,40 -120,0 z"
+         style="stroke-width:2"
+         id="path6458"
+         inkscape:connector-curvature="0" />
+    </symbol>
+    <symbol
+       id="LoopLimitEnd">
+      <title
+         id="title6461">Loop Limit End</title>
+      <desc
+         id="desc6463">End of a loop.</desc>
+      <path
+         d="m 15,75 0,-40 120,0 0,40 -20,40 -80,0 z"
+         style="stroke-width:2"
+         id="path6465"
+         inkscape:connector-curvature="0" />
+    </symbol>
+    <symbol
+       id="Terminal">
+      <title
+         id="title6290">Terminal/Interrupt</title>
+      <desc
+         id="desc6292">A terminal point in a flowchart: start, stop, halt, etc.</desc>
+      <path
+         d="m 35,95 a 20,20 0 0 1 0,-40 l 80,0 a 20,20 0 0 1 0,40 z"
+         style="stroke-width:2"
+         id="path6294"
+         inkscape:connector-curvature="0" />
+    </symbol>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Mend-9"
+       style="overflow:visible"
+       inkscape:isstock="true"
+       inkscape:collect="always">
+      <path
+         inkscape:connector-curvature="0"
+         id="path10412-7"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="326.843"
+     inkscape:cy="538.03107"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:snap-object-midpoints="true"
+     inkscape:snap-center="true"
+     inkscape:snap-text-baseline="true"
+     inkscape:snap-page="true"
+     inkscape:snap-intersection-paths="true"
+     inkscape:object-paths="true"
+     inkscape:object-nodes="true"
+     inkscape:snap-smooth-nodes="true"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:window-width="1551"
+     inkscape:window-height="876"
+     inkscape:window-x="49"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0">
+    <sodipodi:guide
+       position="139.00118,400.24377"
+       orientation="1,0"
+       id="guide10117" />
+    <sodipodi:guide
+       position="55.159861,400.24377"
+       orientation="1,0"
+       id="guide10192" />
+    <sodipodi:guide
+       position="222.84254,524.11371"
+       orientation="0,1"
+       id="guide10395" />
+    <sodipodi:guide
+       position="650.7954,484.95444"
+       orientation="1,0"
+       id="guide11458" />
+    <sodipodi:guide
+       position="468.01296,546.35041"
+       orientation="0,1"
+       id="guide11460" />
+    <sodipodi:guide
+       position="464.26903,424.29957"
+       orientation="0,1"
+       id="guide11518" />
+    <sodipodi:guide
+       position="384.17163,546.35041"
+       orientation="1,0"
+       id="guide11580" />
+    <sodipodi:guide
+       position="468.30959,343.14219"
+       orientation="0,1"
+       id="guide11648" />
+    <sodipodi:guide
+       position="464.26898,235.09135"
+       orientation="0,1"
+       id="guide11722" />
+    <sodipodi:guide
+       position="220.82224,92.360264"
+       orientation="0,1"
+       id="guide11886" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-176.16638,-59.41271)">
+    <use
+       id="use10141-8"
+       style="fill:#ffffff;stroke:#000000"
+       xlink:href="#LoopLimitEnd"
+       x="0"
+       y="0"
+       width="100%"
+       height="100%"
+       transform="matrix(1.3636842,0,0,0.52162659,212.89126,655.43318)" />
+    <use
+       id="use10141-2"
+       style="fill:#ffffff;stroke:#000000"
+       xlink:href="#LoopLimitEnd"
+       x="0"
+       y="0"
+       width="100%"
+       height="100%"
+       transform="matrix(1.3636842,0,0,0.52162659,456.338,512.7021)" />
+    <use
+       id="use10046-2"
+       style="fill:#ffffff;stroke:#000000"
+       xlink:href="#LoopLimitBegin"
+       x="0"
+       y="0"
+       width="100%"
+       height="100%"
+       transform="matrix(1.3973556,0,0,0.55578256,455.83297,402.08956)" />
+    <use
+       id="use10046-9"
+       style="fill:#ffffff;stroke:#000000"
+       xlink:href="#LoopLimitBegin"
+       x="0"
+       y="0"
+       width="100%"
+       height="100%"
+       transform="matrix(1.3973556,0,0,0.55578256,455.53634,198.88134)" />
+    <use
+       id="use10014"
+       style="fill:#ffffff;stroke:#000000"
+       xlink:href="#Process"
+       x="0"
+       y="0"
+       width="100%"
+       height="100%"
+       transform="matrix(2.4047664,0,0,0.65345441,142.49965,113.4913)" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:15px;line-height:150%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="190.5903"
+       y="152.50038"
+       id="text10030"
+       sodipodi:linespacing="150%"><tspan
+         sodipodi:role="line"
+         id="tspan10032"
+         x="190.5903"
+         y="152.50038"
+         style="font-size:17.5px;line-height:150%;text-align:start;text-anchor:start">Задание начальных условий</tspan><tspan
+         sodipodi:role="line"
+         x="190.5903"
+         y="178.75038"
+         id="tspan10163"
+         style="font-size:17.5px;line-height:150%;text-align:start;text-anchor:start">E<tspan
+   style="font-size:17.5px;line-height:150%;text-align:start;baseline-shift:sub;text-anchor:start"
+   id="tspan10169">z</tspan><tspan
+   style="font-size:13.75px;line-height:150%;text-align:start;baseline-shift:super;text-anchor:start"
+   id="tspan10171">0</tspan>, H<tspan
+   style="font-size:17.5px;line-height:150%;text-align:start;baseline-shift:sub;text-anchor:start"
+   id="tspan10165">y</tspan><tspan
+   style="font-size:13.75px;line-height:150%;text-align:start;baseline-shift:super;text-anchor:start"
+   id="tspan10167">1/2</tspan></tspan></text>
+    <use
+       id="use10046"
+       style="fill:#ffffff;stroke:#000000"
+       xlink:href="#LoopLimitBegin"
+       x="0"
+       y="0"
+       width="100%"
+       height="100%"
+       transform="matrix(1.3973556,0,0,0.55578256,210.36592,198.88674)" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="315.15295"
+       y="234.57043"
+       id="text10062"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan10064"
+         x="315.15295"
+         y="234.57043"
+         style="font-size:17.5px;text-align:center;text-anchor:middle">Цикл t</tspan><tspan
+         sodipodi:role="line"
+         x="315.15295"
+         y="256.44543"
+         id="tspan10066"
+         style="font-size:17.5px;text-align:center;text-anchor:middle">от 1 до maxTime</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="556.62"
+       y="235.62119"
+       id="text10062-6"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan10064-7"
+         x="556.62"
+         y="235.62119"
+         style="font-size:16.25px;text-align:center;text-anchor:middle">Цикл m</tspan><tspan
+         sodipodi:role="line"
+         x="556.62"
+         y="255.93369"
+         id="tspan10066-5"
+         style="font-size:16.25px;text-align:center;text-anchor:middle">от 1 до maxSize-1</tspan></text>
+    <use
+       id="use10014-3"
+       style="fill:#ffffff;stroke:#000000"
+       xlink:href="#Process"
+       x="0"
+       y="0"
+       width="100%"
+       height="100%"
+       transform="matrix(2.1004411,0,0,0.51708094,669.42871,261.86316)"
+       inkscape:transform-center-x="302.03561"
+       inkscape:transform-center-y="-16.192247" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="756.09448"
+       y="306.06512"
+       id="text10119"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan10121"
+         x="756.09448"
+         y="306.06512"
+         style="font-size:20px">Расчет H<tspan
+   style="font-size:20px;baseline-shift:sub"
+   id="tspan10127">y</tspan><tspan
+   style="font-size:15px;baseline-shift:super"
+   id="tspan10125">q+1/2</tspan></tspan></text>
+    <use
+       id="use10141"
+       style="fill:#ffffff;stroke:#000000"
+       xlink:href="#LoopLimitEnd"
+       x="0"
+       y="0"
+       width="100%"
+       height="100%"
+       transform="matrix(1.3636842,0,0,0.52162659,456.33805,323.49387)" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="561.25201"
+       y="356.70837"
+       id="text10157"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan10159"
+         x="561.25201"
+         y="356.70837"
+         style="font-size:17.5px;text-align:center;text-anchor:middle">Цикл m</tspan><tspan
+         sodipodi:role="line"
+         x="561.25201"
+         y="378.58337"
+         id="tspan10161"
+         style="font-size:17.5px;text-align:center;text-anchor:middle">m = m + 1</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="560.62"
+       y="436.82941"
+       id="text10062-6-6"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan10064-7-2"
+         x="560.62"
+         y="436.82941"
+         style="font-size:17.5px;text-align:center;text-anchor:middle">Цикл m</tspan><tspan
+         sodipodi:role="line"
+         x="560.62"
+         y="458.70441"
+         id="tspan10066-5-9"
+         style="font-size:17.5px;text-align:center;text-anchor:middle">от 2 до maxSize</tspan></text>
+    <use
+       id="use10014-3-1"
+       style="fill:#ffffff;stroke:#000000"
+       xlink:href="#Process"
+       x="0"
+       y="0"
+       width="100%"
+       height="100%"
+       transform="matrix(2.1004411,0,0,0.51708094,668.77167,460.86832)"
+       inkscape:transform-center-x="302.03561"
+       inkscape:transform-center-y="-16.192247" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="761.43744"
+       y="505.07031"
+       id="text10119-2"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan10121-7"
+         x="761.43744"
+         y="505.07031"
+         style="font-size:20px">Расчет E<tspan
+   style="font-size:20px;baseline-shift:sub"
+   id="tspan10245">z</tspan><tspan
+   style="font-size:15px;baseline-shift:super"
+   id="tspan10125-9">q+1</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="561.25201"
+       y="545.91663"
+       id="text10157-6"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan10159-0"
+         x="561.25201"
+         y="545.91663"
+         style="font-size:17.5px;text-align:center;text-anchor:middle">Цикл m</tspan><tspan
+         sodipodi:role="line"
+         x="561.25201"
+         y="567.79163"
+         id="tspan10161-6"
+         style="font-size:17.5px;text-align:center;text-anchor:middle">m = m + 1</tspan></text>
+    <use
+       id="use10014-3-1-2"
+       style="fill:#ffffff;stroke:#000000"
+       xlink:href="#Process"
+       x="0"
+       y="0"
+       width="100%"
+       height="100%"
+       transform="matrix(2.1004411,0,0,0.51708094,403.10156,587.97703)"
+       inkscape:transform-center-x="302.03561"
+       inkscape:transform-center-y="-16.192247" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="561.05542"
+       y="622.17896"
+       id="text10119-2-6"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan10121-7-1"
+         x="561.05542"
+         y="622.17896"
+         style="font-size:17.5px">Ввод поля с помощью</tspan><tspan
+         sodipodi:role="line"
+         x="561.05542"
+         y="644.05396"
+         id="tspan10274"
+         style="font-size:17.5px">источника возбуждения</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="316.07907"
+       y="688.64771"
+       id="text10157-6-2"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan10159-0-0"
+         x="316.07907"
+         y="688.64771"
+         style="font-size:17.5px;text-align:center;text-anchor:middle">Цикл t</tspan><tspan
+         sodipodi:role="line"
+         x="316.07907"
+         y="710.52271"
+         id="tspan10161-6-2"
+         style="font-size:17.5px;text-align:center;text-anchor:middle">t = t + 1</tspan></text>
+    <use
+       id="use10312"
+       style="fill:#ffffff;stroke:#000000"
+       xlink:href="#Terminal"
+       x="0"
+       y="0"
+       width="100%"
+       height="100%"
+       transform="translate(240.16757,5.41271)" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="278.18564"
+       y="85.77404"
+       id="text10328"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan10330"
+         x="278.18564"
+         y="85.77404"
+         style="font-size:20px">Начало</tspan></text>
+    <use
+       id="use10312-3"
+       style="fill:#ffffff;stroke:#000000"
+       xlink:href="#Terminal"
+       x="0"
+       y="0"
+       width="100%"
+       height="100%"
+       transform="translate(239.39806,690.91545)" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="281.41614"
+       y="771.27692"
+       id="text10328-7"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan10330-5"
+         x="281.41614"
+         y="771.27692"
+         style="font-size:20px">Конец</tspan></text>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Mend)"
+       d="m 315.16757,101.64792 c 0,35.71428 0,35.71428 0,35.71428"
+       id="path10397"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.74992585;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Mend-9)"
+       d="m 315.16757,187.9679 c 0,27.34143 0,27.34143 0,27.34143"
+       id="path10397-3"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.95827973;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker11340)"
+       d="m 399.00893,240.57043 c 74.28865,-0.005 74.28865,-0.005 74.28865,-0.005"
+       id="path11332"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker11472)"
+       d="m 644.17935,240.56503 182.78244,0 0,38.22575"
+       id="path11464"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker11528)"
+       d="m 826.96179,322.3622 c 0,40.25367 0,40.25367 0,40.25367 l -186.52637,0"
+       id="path11520"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker11590)"
+       d="m 560.33802,385.21935 0,35"
+       id="path11582"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker11658)"
+       d="m 644.47598,443.77325 182.48581,0 0,35.73181"
+       id="path11650"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker11732)"
+       d="m 826.96179,520.21935 0,31.60475 -186.52642,0"
+       id="path11724"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker11810)"
+       d="m 560.33802,573.79078 0,32.14285"
+       id="path11802"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker11896)"
+       d="m 560.33802,648.79078 0,45.76439 -163.34939,0"
+       id="path11888"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker11986)"
+       d="m 315.16757,718.07649 0,26.42857"
+       id="path11978"
+       inkscape:connector-curvature="0" />
+  </g>
+</svg>

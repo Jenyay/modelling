@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="161.74709mm"
+   height="91.675491mm"
+   viewBox="0 0 573.11959 324.83441"
+   id="svg2"
+   version="1.1"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14, custom)"
+   sodipodi:docname="Вычислительные методы.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs4">
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker5213"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path5215"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Mend"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path4214"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker4531"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path4533"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="scale(-0.6,-0.6)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Mend"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path4232"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="scale(-0.6,-0.6)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Lend"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path4208"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.979899"
+     inkscape:cx="212.63711"
+     inkscape:cy="110.35917"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:snap-object-midpoints="true"
+     inkscape:snap-center="true"
+     inkscape:snap-text-baseline="true"
+     inkscape:snap-bbox="true"
+     inkscape:snap-intersection-paths="true"
+     inkscape:bbox-nodes="true"
+     inkscape:bbox-paths="true"
+     inkscape:snap-bbox-edge-midpoints="true"
+     inkscape:snap-bbox-midpoints="true"
+     inkscape:snap-midpoints="true"
+     inkscape:snap-global="true"
+     inkscape:window-width="1920"
+     inkscape:window-height="1092"
+     inkscape:window-x="0"
+     inkscape:window-y="40"
+     inkscape:window-maximized="1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:showpageshadow="2"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-95.879685,-337.07648)">
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:2.07766;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect4136"
+       width="219.2075"
+       height="58.493771"
+       x="270.15155"
+       y="338.11533" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="280.14856"
+       y="371.79333"
+       id="text4138"><tspan
+         sodipodi:role="line"
+         id="tspan4140"
+         x="280.14856"
+         y="371.79333"
+         style="font-size:15px;line-height:1.25">Вычислительные методы</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="224.38818"
+       y="477.30725"
+       id="text4142"><tspan
+         sodipodi:role="line"
+         id="tspan4144"
+         x="224.38818"
+         y="477.30725"
+         style="font-size:15px;line-height:1.25;text-align:center;text-anchor:middle">Решение дифференциальных</tspan><tspan
+         sodipodi:role="line"
+         x="224.38818"
+         y="496.05725"
+         id="tspan4146"
+         style="font-size:15px;line-height:1.25;text-align:center;text-anchor:middle">уравнений</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="539.50928"
+       y="476.60898"
+       id="text4142-3"><tspan
+         sodipodi:role="line"
+         id="tspan4144-6"
+         x="539.50928"
+         y="476.60898"
+         style="font-size:15px;line-height:1.25;text-align:center;text-anchor:middle">Решение интегральных</tspan><tspan
+         sodipodi:role="line"
+         x="539.50928"
+         y="495.35898"
+         id="tspan4146-7"
+         style="font-size:15px;line-height:1.25;text-align:center;text-anchor:middle">уравнений</tspan></text>
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:2.24566555;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect4136-5"
+       width="255.75284"
+       height="58.57143"
+       x="97.002487"
+       y="453.08649" />
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:2.24566555;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect4136-5-3"
+       width="255.75284"
+       height="58.57143"
+       x="412.1236"
+       y="452.79077" />
+    <path
+       style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 224.87891,451.96365 v 0"
+       id="path4527"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Mend)"
+       d="M 378.57143,396.64792 224.87891,452.46364"
+       id="path5171"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker5213)"
+       d="m 378.91278,395.70798 161.08724,55.95995"
+       id="path5211"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="131.42857"
+       y="540.21936"
+       id="text5259"><tspan
+         sodipodi:role="line"
+         id="tspan5261"
+         x="131.42857"
+         y="540.21936"
+         style="font-size:15px;line-height:1.25">Метод конечных разностей</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="130.71428"
+       y="572.93359"
+       id="text5263"><tspan
+         sodipodi:role="line"
+         id="tspan5265"
+         x="130.71428"
+         y="572.93359"
+         style="font-size:15px;line-height:1.25">Метод конечных разностей</tspan><tspan
+         sodipodi:role="line"
+         x="130.71428"
+         y="591.68359"
+         id="tspan5269"
+         style="font-size:15px;line-height:1.25">во временной области (FDTD)</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="130.14285"
+       y="624.50507"
+       id="text5273"><tspan
+         sodipodi:role="line"
+         id="tspan5275"
+         x="130.14285"
+         y="624.50507"
+         style="font-size:15px;line-height:1.25">Метод конечных элементов</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="129.28572"
+       y="658.79077"
+       id="text5277"><tspan
+         sodipodi:role="line"
+         id="tspan5279"
+         x="129.28572"
+         y="658.79077"
+         style="font-size:15px;line-height:1.25">Метод линий передач (TLM)</tspan></text>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 105,511.64792 0,140.71428 c 17.85714,0 18.57143,0 18.57143,0"
+       id="path5281"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 105,618.07649 c 18.57143,0 18.57143,0 18.57143,0"
+       id="path5283"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.88975656px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 105,582.00506 c 20.35715,0 20.35715,0 20.35715,0"
+       id="path5285"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.88975656px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 104.39285,534.29078 c 20.35715,0 20.35715,0 20.35715,0"
+       id="path5285-5"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.89334744px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 420.42899,510.50349 0,111.97826 c 17.90842,0 18.62476,0 18.62476,0"
+       id="path5281-6"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.88975656px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 420.45494,580.83624 c 20.35715,0 20.35715,0 20.35715,0"
+       id="path5285-9"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.88975656px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 419.84779,533.12196 c 20.35715,0 20.35715,0 20.35715,0"
+       id="path5285-5-1"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="448.20493"
+       y="537.56683"
+       id="text5326"><tspan
+         sodipodi:role="line"
+         id="tspan5328"
+         x="448.20493"
+         y="537.56683"
+         style="font-size:15px;line-height:1.25">Метод моментов</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="447.02637"
+       y="573.87958"
+       id="text5326-2"><tspan
+         sodipodi:role="line"
+         id="tspan5328-7"
+         x="447.02637"
+         y="573.87958"
+         style="font-size:15px;line-height:1.25">Метод граничных </tspan><tspan
+         sodipodi:role="line"
+         x="447.02637"
+         y="592.62958"
+         id="tspan5348"
+         style="font-size:15px;line-height:1.25">интегральных уравнений</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="445.02637"
+       y="617.40765"
+       id="text5326-2-0"><tspan
+         sodipodi:role="line"
+         id="tspan5328-7-9"
+         x="445.02637"
+         y="617.40765"
+         style="font-size:15px;line-height:1.25">Метод поверхностных</tspan><tspan
+         sodipodi:role="line"
+         x="445.02637"
+         y="636.15765"
+         id="tspan5348-3"
+         style="font-size:15px;line-height:1.25">интегральных уравнений</tspan></text>
+  </g>
+</svg>

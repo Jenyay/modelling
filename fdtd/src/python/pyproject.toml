@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "fdtd-examples"
+version = "0.1.0"
+description = "FDTD examples"
+authors = ["Eugene Ilin <jenyay.ilin@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "fdtd_examples"}]
+
+[tool.poetry.dependencies]
+python = ">=3.10 <3.13"
+numpy = "^1.25.2"
+matplotlib = "^3.8.0"
+scipy = "^1.11.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
