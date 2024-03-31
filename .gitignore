@@ -2,5 +2,5 @@
 __pycache__
 *.pyc
 *.odp#
-tmp/
+**/tmp/
 .ipynb_checkpoints
