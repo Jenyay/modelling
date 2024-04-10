@@ -2,7 +2,10 @@
 
 from datetime import datetime
 
+
 class Post:
+    """Класс текстового поста для блога"""
+
     def __init__(self, author: str, text: str):
         self._author = author
         self._text = text
