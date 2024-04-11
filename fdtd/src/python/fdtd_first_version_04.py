@@ -28,9 +28,9 @@ class AnimateFieldDisplay:
         minYSize, maxYSize - интервал отображения графика по оси Y.
         yLabel - метка для оси Y
         '''
-        self.maxXSize = maxXSize
-        self.minYSize = minYSize
-        self.maxYSize = maxYSize
+        self._maxXSize = maxXSize
+        self._minYSize = minYSize
+        self._maxYSize = maxYSize
         self._xList = None
         self._line = None
         self._xlabel = 'x, отсчет'
@@ -42,7 +42,7 @@ class AnimateFieldDisplay:
         '''
         Инициализировать окно с анимацией
         '''
-        self._xList = np.arange(self.maxXSize)
+        self._xList = np.arange(self._maxXSize)
 
         # Включить интерактивный режим для анимации
         plt.ion()
@@ -51,8 +51,8 @@ class AnimateFieldDisplay:
         self._fig, self._ax = plt.subplots()
 
         # Установка отображаемых интервалов по осям
-        self._ax.set_xlim(0, self.maxXSize)
-        self._ax.set_ylim(self.minYSize, self.maxYSize)
+        self._ax.set_xlim(0, self._maxXSize)
+        self._ax.set_ylim(self._minYSize, self._maxYSize)
 
         # Установка меток по осям
         self._ax.set_xlabel(self._xlabel)
@@ -62,7 +62,7 @@ class AnimateFieldDisplay:
         self._ax.grid()
 
         # Отобразить поле в начальный момент времени
-        self._line = self._ax.plot(self._xList, np.zeros(self.maxXSize))[0]
+        self._line = self._ax.plot(self._xList, np.zeros(self._maxXSize))[0]
 
     def drawProbes(self, probesPos: List[int]):
         '''
