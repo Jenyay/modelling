@@ -87,7 +87,7 @@ class AnimateFieldDisplay:
         self._ax.grid()
 
         # Отобразить поле в начальный момент времени
-        self._line, = self._ax.plot(self._xList, np.zeros(self.maxXSize))
+        self._line = self._ax.plot(self._xList, np.zeros(self.maxXSize))[0]
 
     def drawProbes(self, probesPos: List[int]):
         '''

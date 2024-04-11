@@ -7,12 +7,12 @@
 '''
 
 import matplotlib.pyplot as plt
-import numpy
+import numpy as np
 
 
 if __name__ == '__main__':
     # Волновое сопротивление свободного пространства
-    W0 = 120.0 * numpy.pi
+    W0 = 120.0 * np.pi
 
     # Число Куранта
     Sc = 1.0
@@ -29,15 +29,15 @@ if __name__ == '__main__':
     # Положение источника
     sourcePos = 75
 
-    Ez = numpy.zeros(maxSize)
-    Hy = numpy.zeros(maxSize)
+    Ez = np.zeros(maxSize)
+    Hy = np.zeros(maxSize)
 
     # Поле, зарегистрированное в датчике в зависимости от времени
-    probeTimeEz = numpy.zeros(maxTime)
+    probeTimeEz = np.zeros(maxTime)
     probeTimeEz[0] = Ez[probePos]
 
     # Подготовка к отображению поля в пространстве
-    xlist = numpy.arange(maxSize)
+    xlist = np.arange(maxSize)
 
     # Включить интерактивный режим для анимации
     plt.ion()
@@ -57,7 +57,7 @@ if __name__ == '__main__':
     ax.grid()
 
     # Отобразить поле в начальный момент времени
-    line, = ax.plot(xlist, Ez)
+    line = ax.plot(xlist, Ez)[0]
 
     # Отобразить положение источника
     ax.plot(sourcePos, 0, 'ok')
@@ -73,7 +73,7 @@ if __name__ == '__main__':
         Ez[1:] = Ez[1:] + (Hy[1:] - Hy[:-1]) * Sc * W0
 
         # Источник возбуждения
-        Ez[sourcePos] += numpy.exp(-(q - 0.5 - 30.0) ** 2 / 100.0)
+        Ez[sourcePos] += np.exp(-(q - 0.5 - 30.0) ** 2 / 100.0)
 
         # Регистрация поля в точке
         probeTimeEz[q] = Ez[probePos]
@@ -88,7 +88,7 @@ if __name__ == '__main__':
     plt.ioff()
 
     # Отображение сигнала, сохраненного в датчике
-    tlist = numpy.arange(maxTime)
+    tlist = np.arange(maxTime)
     fig, ax = plt.subplots()
     ax.set_xlim(0, maxTime)
     ax.set_ylim(-1.1, 1.1)
