@@ -1,4 +1,4 @@
-# example_06/post.py
+# example_07/post.py
 
 from datetime import datetime
 
@@ -6,13 +6,19 @@ from datetime import datetime
 class Post:
     """Класс текстового поста для блога"""
 
+    _DATABASE_NAME = "db_posts"
+
     def __init__(self, author: str, text: str):
         self._author = author
         self._text = text
         self._date = datetime.utcnow()
 
     def save(self) -> None:
-        print("Пост сохранен")
+        print(f"Пост сохранен в базу данных {Post._DATABASE_NAME}")
+
+    @staticmethod
+    def get_database_name() -> str:
+        return Post._DATABASE_NAME
 
     @property
     def author(self) -> str:

@@ -8,7 +8,9 @@ from post import Post
 if __name__ == "__main__":
     post = Post("Толстой Л.Н.", "Очень длинный текст...")
 
+    print(f"{post.author=}")
     print(f"{post.text=}")
+    print()
     print(post.format())
 
     post.text = "Еще более длинный текст"

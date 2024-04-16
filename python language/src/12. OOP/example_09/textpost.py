@@ -1,9 +1,9 @@
-# example_06/post.py
+# example_09/textpost.py
 
 from datetime import datetime
 
 
-class Post:
+class TextPost:
     """Класс текстового поста для блога"""
 
     def __init__(self, author: str, text: str):
@@ -12,7 +12,7 @@ class Post:
         self._date = datetime.utcnow()
 
     def save(self) -> None:
-        print("Пост сохранен")
+        print("Текстовый пост сохранен")
 
     @property
     def author(self) -> str:
