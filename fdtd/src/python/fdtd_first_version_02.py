@@ -36,7 +36,7 @@ if __name__ == '__main__':
     probeTimeEz[0] = Ez[probePos]
 
     # Подготовка к отображению поля в пространстве
-    xlist = np.arange(maxSize)
+    xdata = np.arange(maxSize)
 
     # Включить интерактивный режим для анимации
     plt.ion()
@@ -58,7 +58,7 @@ if __name__ == '__main__':
     ax.grid()
 
     # Отобразить поле в начальный момент времени
-    line = ax.plot(xlist, Ez)[0]
+    line = ax.plot(xdata, Ez)[0]
     print('line = {}'.format(type(line)))
 
     # Отобразить положение источника

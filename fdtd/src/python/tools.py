@@ -56,7 +56,7 @@ class AnimateFieldDisplay:
         self._maxXSize = maxXSize
         self._minYSize = minYSize
         self._maxYSize = maxYSize
-        self._xList = None
+        self._xdata = None
         self._line = None
         self._xlabel = 'x, отсчет'
         self._ylabel = yLabel
@@ -67,7 +67,7 @@ class AnimateFieldDisplay:
         '''
         Инициализировать окно с анимацией
         '''
-        self._xList = np.arange(self._maxXSize)
+        self._xdata = np.arange(self._maxXSize)
 
         # Включить интерактивный режим для анимации
         plt.ion()
@@ -87,7 +87,7 @@ class AnimateFieldDisplay:
         self._ax.grid()
 
         # Отобразить поле в начальный момент времени
-        self._line = self._ax.plot(self._xList, np.zeros(self._maxXSize))[0]
+        self._line = self._ax.plot(self._xdata, np.zeros(self._maxXSize))[0]
 
     def drawProbes(self, probesPos: List[int]):
         '''
