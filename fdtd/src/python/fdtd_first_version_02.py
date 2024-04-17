@@ -30,7 +30,6 @@ if __name__ == '__main__':
 
     Ez = np.zeros(maxSize)
     Hy = np.zeros(maxSize)
-    Ez[sourcePos]
 
     # Поле, зарегистрированное в датчике в зависимости от времени
     probeTimeEz = np.zeros(maxTime)
