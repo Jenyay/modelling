@@ -43,24 +43,9 @@ if __name__ == '__main__':
     for probe in probes:
         probe.addData(Ez, Hy)
 
-    # Параметры отображения поля
-    # Для поля E
-    display_field = Ez
-    display_ylabel = 'Ez, В/м'
-    display_ymin = -1.1
-    display_ymax = 1.1
-
-    # Для поля H
-    # display_field = Hy
-    # display_ylabel = 'Hy, А/м'
-    # display_ymin = -1.1 / W0
-    # display_ymax = 1.1 / W0
-
     # Создание экземпляра класса для отображения
     # распределения поля в пространстве
-    display = tools.AnimateFieldDisplay(maxSize,
-                                        display_ymin, display_ymax,
-                                        display_ylabel)
+    display = tools.AnimateFieldDisplayEH(maxSize, -1.1, 1.1)
 
     display.activate()
     display.drawSources([sourcePos])
@@ -80,8 +65,8 @@ if __name__ == '__main__':
         for probe in probes:
             probe.addData(Ez, Hy)
 
-        if q % 2 == 0:
-            display.updateData(display_field, q)
+        if q % 4 == 0:
+            display.updateData(Ez, Hy, q)
 
     display.stop()
 
