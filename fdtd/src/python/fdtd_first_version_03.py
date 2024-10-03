@@ -88,12 +88,12 @@ if __name__ == '__main__':
     plt.ioff()
 
     # Отображение сигнала, сохраненного в датчике
-    tlist = np.arange(maxTime)
+    time = np.arange(maxTime)
     fig, ax = plt.subplots()
     ax.set_xlim(0, maxTime)
     ax.set_ylim(-1.1, 1.1)
     ax.set_xlabel('x, отсчет')
     ax.set_ylabel('Ez, В/м')
-    ax.plot(tlist, probeTimeEz)
+    ax.plot(time, probeTimeEz)
     ax.grid()
     plt.show()

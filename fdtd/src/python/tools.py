@@ -145,12 +145,12 @@ class AnimateFieldDisplayEH:
         maxXSize - размер области моделирования в отсчетах.
         minYSizeE, maxYSizeE - интервал отображения графика по оси Y.
         '''
-        self._W0 = 120.0 * np.pi
+        W0 = 120.0 * np.pi
         self._maxXSize = maxXSize
         self._minYSize_E = minYSizeE
         self._maxYSize_E = maxYSizeE
-        self._minYSize_H = minYSizeE / self._W0
-        self._maxYSize_H = maxYSizeE / self._W0
+        self._minYSize_H = minYSizeE / W0
+        self._maxYSize_H = maxYSizeE / W0
         self._xdata_E = None
         self._xdata_H = None
         self._line_E = None
