@@ -249,11 +249,11 @@ if __name__ == '__main__':
     plt.grid()
 
     plt.subplot(2, 1, 2)
-    plt.plot(v)
+    plt.plot(v / c)
     plt.xlabel('f, отсчет')
-    plt.ylabel('v, м/c')
+    plt.ylabel('v / c')
     plt.xlim(0, 300)
-    plt.ylim(c * 0.9, c * 1.1)
+    plt.ylim(0.9, 1.1)
     plt.grid()
 
     plt.show()
