@@ -1,15 +1,24 @@
-# example_11/basepost.py
+from abc import ABCMeta, abstractmethod
+from datetime import datetime, timezone
 
-from datetime import datetime
+class BasePost(metaclass=ABCMeta):
+    """Базовый класс для постов блога"""
 
-
-class BasePost:
-    """Базовый класс для постов любого вида"""
-
-    def __init__(self, author: str):
+    def __init__(self, author):
+        print("BasePost.__init__()")
         self._author = author
-        self._date = datetime.utcnow()
+        self._date = datetime.now(timezone.utc)
 
     @property
-    def author(self) -> str:
-        return self._author
+    def author(self): return self._author
+
+    @property
+    def date(self): return self._date
+
+    @abstractmethod
+    def format(self):
+        ...
+
+    @abstractmethod
+    def _save(self):
+        ...

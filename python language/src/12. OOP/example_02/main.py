@@ -1,19 +1,11 @@
-"""example_02/main.py
-
-Демонстрация добавления переменной класса вне класса.
-Так делать не надо.
-"""
-
-from post import Post
+from textpost import TextPost
 
 if __name__ == "__main__":
-    post = Post("Толстой Л.Н.", "Очень длинный текст...")
+    post = TextPost("Толстой Л.Н.", "Очень длинный текст...")
 
-    print()
     print(dir(post))
 
-    # Так лучше не делать
-    post.other_value = "Новая переменная в классе"
-
+    # Не рекомендуемый способ добавления полей класса
+    post.title = "Война и мир"
     print()
     print(dir(post))

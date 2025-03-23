@@ -1,12 +1,9 @@
-"""example_07/main.py
+from textpost import TextPost
+from imagepost import ImagePost
 
-Демонстрация использования статического метода класса.
-"""
+post1 = TextPost("Толстой Л.Н.", "Очень длинный текст...")
+post2 = ImagePost("Малевич К.С.", "black_square.jpg")
 
-from post import Post
-
-if __name__ == "__main__":
-    print("База данных для сохранения постов:", Post.get_database_name())
-
-    post = Post("Толстой Л.Н.", "Очень длинный текст...")
-    post.save()
+print(post1.format())
+print()
+print(post2.format())

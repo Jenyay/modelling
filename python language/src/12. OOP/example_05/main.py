@@ -1,19 +1,10 @@
-"""example_05/main.py
-
-Демонстрация переменных уровня класса (статические переменные).
-"""
-
-from post import Post
+from textpost import TextPost
 
 if __name__ == "__main__":
-    post_1 = Post("Толстой Л.Н.", "Очень длинный текст...")
-    post_2 = Post("Чехов А.П.", "Очень краткий текст.")
+    post = TextPost("Толстой Л.Н.", "Очень длинный текст...")
 
-    post_1.save()
-    post_2.save()
+    print("Автор:", post._author)
+    print("Дата:", post._date)
 
-    # Не надо так делать!
-    Post._DATABASE_NAME = "other_db_posts"
-
-    post_1.save()
-    post_2.save()
+    print("Изменяем текст поста")
+    post._text = "Еще более длинный текст..."

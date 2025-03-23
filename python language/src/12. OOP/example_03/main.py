@@ -1,18 +1,14 @@
-"""example_03/main.py
-
-Демонстрация не рекомендуемого способа доступа к переменным класса.
-"""
-
-from post import Post
+from textpost import TextPost
 
 if __name__ == "__main__":
-    post = Post("Толстой Л.Н.", "Очень длинный текст...")
-    post.save()
+    post = TextPost("Толстой Л.Н.", "Очень длинный текст...")
 
-    print(post.format())
+    print("Автор:", post.author)
+    print("Дата:", post.date)
+    print("Текст:", post.text)
 
-    # Некорректный доступ к внутренним переменным класса
-    post._author = "Чехов А.П."
-    post._text = "Очень короткий текст"
-
-    print(post.format())
+    post.author = "Чехов А.П."
+    print()
+    print("Автор:", post.author)
+    print("Дата:", post.date)
+    print("Текст:", post.text)

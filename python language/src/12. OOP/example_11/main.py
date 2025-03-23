@@ -1,26 +1,9 @@
-"""example_11/main.py
-
-Демонстрация полиморфизма с использованием наследования от базового класса.
-Пример с ошибкой отсутствия ожидаемого метода format().
-"""
-
 from textpost import TextPost
 from imagepost import ImagePost
 
-if __name__ == "__main__":
-    post_1 = TextPost("Толстой Л.Н.", "Очень длинный текст...")
-    post_1.save()
+feed = []
+feed.append(TextPost("Толстой Л.Н.", "Очень длинный текст..."))
+feed.append(ImagePost("Малевич К.С.", "black_square.jpg"))
 
-    post_2 = ImagePost("Малевич К.С.", "https://malevich.ru/black.jpg")
-    post_2.save()
-
-    print(dir(post_1))
-    print()
-
-    print(dir(post_2))
-    print()
-
-    feed = [post_1, post_2]
-    for post in feed:
-        print(post.format())
-        print()
+for post in feed:
+    print(post.format())

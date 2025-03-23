@@ -1,16 +1,10 @@
-"""example_04/main.py
-
-Демонстрация переменных уровня класса (статические переменные).
-"""
-
-from post import Post
+from textpost import TextPost
 
 if __name__ == "__main__":
-    post = Post("Толстой Л.Н.", "Очень длинный текст...")
-    post.save()
+    post = TextPost("Толстой Л.Н.", "Очень длинный текст...")
 
-    print()
-    print(dir(Post))
+    print("Автор:", post.get_author())
+    print("Дата:", post.get_date())
 
-    print()
-    print(dir(post))
+    print("Изменяем текст поста")
+    post.set_text("Еще более длинный текст...")

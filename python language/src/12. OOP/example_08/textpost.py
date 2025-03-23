@@ -1,33 +1,26 @@
-# example_08/textpost.py
+from basepost import BasePost
 
-from datetime import datetime
-
-
-class TextPost:
+class TextPost(BasePost):
     """Класс текстового поста для блога"""
 
-    def __init__(self, author: str, text: str):
-        self._author = author
+    def __init__(self, author, text):
+        print("TextPost.__init__()")
+        super().__init__(author)
         self._text = text
-        self._date = datetime.utcnow()
+        self._save()
 
-    def save(self) -> None:
-        print("Текстовый пост сохранен")
-
-    @property
-    def author(self) -> str:
-        return self._author
+    def _save(self):
+        print("Текстовый пост сохранен.")
 
     @property
-    def text(self) -> str:
-        return self._text
+    def text(self): return self._text
 
     @text.setter
-    def text(self, text: str) -> None:
-        self._text = text
-        self._date = datetime.utcnow()
+    def text(self, value):
+        self._text = value
+        self._save()
 
-    def format(self) -> str:
+    def format(self):
         return f"""====
 Автор: {self._author}
 Дата: {self._date}

@@ -1,17 +1,11 @@
-"""example_01/main.py
-
-Демонстрация создания экземпляра (instance) класса.
-"""
-
-from post import Post
+from textpost import TextPost
 
 if __name__ == "__main__":
-    post = Post("Толстой Л.Н.", "Очень длинный текст...")
-    post.save()
+    post = TextPost("Толстой Л.Н.", "Очень длинный текст...")
 
-    print()
     print(f"{type(post)=}")
+    print()
     print(dir(post))
     print()
-
-    print(post.format())
+    print("Автор:", post.author)
+    print("Дата:", post.date)

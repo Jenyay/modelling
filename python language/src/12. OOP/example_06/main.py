@@ -1,20 +1,10 @@
-"""example_06/main.py
-
-Демонстрация использования свойств (properties) класса.
-"""
-
-from post import Post
+from textpost import TextPost
 
 if __name__ == "__main__":
-    post = Post("Толстой Л.Н.", "Очень длинный текст...")
+    post = TextPost("Толстой Л.Н.", "Очень длинный текст...")
 
-    print(f"{post.author=}")
-    print(f"{post.text=}")
-    print()
-    print(post.format())
+    print("Автор:", post.author)
+    print("Дата:", post.date)
 
-    post.text = "Еще более длинный текст"
-
-    print()
-    print(f"{post.text=}")
-    print(post.format())
+    print("Изменяем текст поста")
+    post.text = "Еще более длинный текст..."
