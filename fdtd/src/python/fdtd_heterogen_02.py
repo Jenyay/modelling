@@ -64,7 +64,7 @@ if __name__ == '__main__':
 
     for q in range(maxTime):
         # Расчет компоненты поля H
-        Hy = Hy + (Ez[1:] - Ez[:-1]) * Sc / (W0 * mu)
+        Hy[:] = Hy + (Ez[1:] - Ez[:-1]) * Sc / (W0 * mu)
 
         # Граничные условия для поля E
         Ez[0] = Ez[1]

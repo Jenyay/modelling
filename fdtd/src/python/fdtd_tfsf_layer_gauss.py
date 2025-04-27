@@ -91,7 +91,7 @@ if __name__ == '__main__':
 
     for q in range(maxTime):
         # Расчет компоненты поля H
-        Hy = Hy + (Ez[1:] - Ez[:-1]) * Sc / (W0 * mu)
+        Hy[:] = Hy + (Ez[1:] - Ez[:-1]) * Sc / (W0 * mu)
 
         # Источник возбуждения с использованием метода
         # Total Field / Scattered Field

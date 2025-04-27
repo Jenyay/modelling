@@ -68,8 +68,16 @@ if __name__ == '__main__':
     loss = np.zeros(maxSize)
     loss[layer_x:] = 0.01
 
+    # Магнитные потери в среде. loss_m = sigma_m * dt / (2 * mu * mu0)
+    loss_m = np.zeros(maxSize - 1)
+
+    # Коэффициенты для расчета поля E
     ceze = (1.0 - loss) / (1.0 + loss)
-    cezh = W0 / (eps * (1.0 + loss))
+    cezh = (Sc * W0) / (eps * (1.0 + loss))
+
+    # Коэффициенты для расчета поля H
+    chyh = (1.0 - loss_m) / (1.0 + loss_m)
+    chye = Sc / (mu * W0 * (1.0 + loss_m))
 
     Ez = np.zeros(maxSize)
     Hy = np.zeros(maxSize - 1)
@@ -95,7 +103,7 @@ if __name__ == '__main__':
 
     for q in range(maxTime):
         # Расчет компоненты поля H
-        Hy = Hy + (Ez[1:] - Ez[:-1]) * Sc / (W0 * mu)
+        Hy[:] = chyh * Hy + chye * (Ez[1:] - Ez[:-1])
 
         # Источник возбуждения с использованием метода
         # Total Field / Scattered Field

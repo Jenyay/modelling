@@ -71,13 +71,17 @@ if __name__ == '__main__':
     for x, value in zip(layer_loss_x, layer_loss_value):
         loss[x:] = value
 
+    # Магнитные потери в среде. loss_m = sigma_m * dt / (2 * mu * mu0)
+    loss_m = np.zeros(maxSize - 1)
+    loss_m[:] = loss[:-1]
+
     # Коэффициенты для расчета поля E
-    ceze = (1 - loss) / (1 + loss)
-    cezh = W0 / (eps * (1 + loss))
+    ceze = (1.0 - loss) / (1.0 + loss)
+    cezh = (Sc * W0) / (eps * (1.0 + loss))
 
     # Коэффициенты для расчета поля H
-    chyh = (1 - loss) / (1 + loss)
-    chye = 1 / (W0 * (1 + loss))
+    chyh = (1.0 - loss_m) / (1.0 + loss_m)
+    chye = Sc / (mu * W0 * (1.0 + loss_m))
 
     # Усреднение коэффициентов на границах поглощающего слоя
     for x in layer_loss_x:
@@ -109,7 +113,7 @@ if __name__ == '__main__':
 
     for q in range(maxTime):
         # Расчет компоненты поля H
-        Hy = chyh[:-1] * Hy + chye[:-1] * (Ez[1:] - Ez[:-1])
+        Hy[:] = chyh * Hy + chye * (Ez[1:] - Ez[:-1])
 
         # Источник возбуждения с использованием метода
         # Total Field / Scattered Field
