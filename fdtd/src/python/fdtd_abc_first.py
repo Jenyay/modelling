@@ -73,11 +73,11 @@ if __name__ == '__main__':
     oldEzRight = Ez[-2]
 
     # Расчет коэффициентов для граничных условий
-    tempLeft = Sc / np.sqrt(mu[0] * eps[0])
-    koeffABCLeft = (tempLeft - 1) / (tempLeft + 1)
+    Sc1Left = Sc / np.sqrt(mu[0] * eps[0])
+    koeffABCLeft = (Sc1Left - 1) / (Sc1Left + 1)
 
-    tempRight = Sc / np.sqrt(mu[-1] * eps[-1])
-    koeffABCRight = (tempRight - 1) / (tempRight + 1)
+    Sc1Right = Sc / np.sqrt(mu[-1] * eps[-1])
+    koeffABCRight = (Sc1Right - 1) / (Sc1Right + 1)
 
     # Параметры отображения поля E
     display_field = Ez
