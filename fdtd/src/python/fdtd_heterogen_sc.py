@@ -62,9 +62,9 @@ if __name__ == '__main__':
     eps[layer_x:] = 9.0
 
     # Магнитная проницаемость
-    mu = np.ones(maxSize)
+    mu = np.ones(maxSize - 1)
 
-    Sc = np.sqrt(eps * mu)
+    Sc = np.sqrt(eps[:-1] * mu)
 
     Ez = np.zeros(maxSize)
     Hy = np.zeros(maxSize - 1)
@@ -90,7 +90,7 @@ if __name__ == '__main__':
 
     for q in range(maxTime):
         # Расчет компоненты поля H
-        Hy = Hy + (Ez[1:] - Ez[:-1]) * Sc[:-1] / (W0 * mu[:-1])
+        Hy[:] = Hy + (Ez[1:] - Ez[:-1]) * Sc / (W0 * mu)
 
         # Источник возбуждения с использованием метода
         # Total Field / Scattered Field
@@ -101,7 +101,7 @@ if __name__ == '__main__':
         Ez[-1] = Ez[-2]
 
         # Расчет компоненты поля E
-        Ez[1:-1] = Ez[1: -1] + (Hy[1:] - Hy[: -1]) * Sc[1:-1] * W0 / eps[1: -1]
+        Ez[1:-1] = Ez[1: -1] + (Hy[1:] - Hy[: -1]) * Sc[1:] * W0 / eps[1: -1]
 
         # Источник возбуждения с использованием метода
         # Total Field / Scattered Field

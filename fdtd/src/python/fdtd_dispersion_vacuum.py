@@ -206,9 +206,10 @@ if __name__ == '__main__':
     k = R_phase[k_index] / k_index
     R_phase_line = R_phase - k * np.arange(0, len(R))
 
-    # Отображение спектра падающего сигнала
     plt.figure()
     plt.suptitle('Коэффициент прохождения')
+
+    # Отображение спектра падающего сигнала
     plt.subplot(3, 1, 1)
     plt.plot(np.abs(spectrum_0))
     plt.xlabel('f, отсчет')
