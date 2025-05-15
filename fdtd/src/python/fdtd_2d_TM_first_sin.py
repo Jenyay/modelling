@@ -45,7 +45,6 @@ if __name__ == '__main__':
     wavelength = wavelength_m / d
 
     # Расчет "дискретных" параметров моделирования
-    # "Одномерный" аналог числа Куранта для случая 2D
     Cdtds = 1.0 / numpy.sqrt(2.0)
 
     dt = d / c * Cdtds
