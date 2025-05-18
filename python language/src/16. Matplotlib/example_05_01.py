@@ -20,11 +20,10 @@ if __name__ == "__main__":
 
     plt.plot(xdata, ydata)
     plt.grid()
-    plt.xlim(-10, 10)
-    plt.ylim(-1, 2)
-
-    # Добавляем метки к осям
     plt.xlabel("X")
     plt.ylabel("Y")
+
+    # Добавляем заголовок к графику
+    plt.title("График функции sinc(x)")
 
     plt.show()

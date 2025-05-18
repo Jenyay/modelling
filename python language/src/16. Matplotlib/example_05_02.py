@@ -18,12 +18,14 @@ if __name__ == "__main__":
     xdata = np.linspace(xmin, xmax, count)
     ydata = [func(x) for x in xdata]
 
-    plt.plot(xdata, ydata)
-    plt.grid()
-    plt.xlim(-10, 10)
-    plt.ylim(-1, 2)
+    # plt.plot(xdata, ydata, "--k")
+    # plt.plot(xdata, ydata, ":r")
+    # plt.plot(xdata, ydata, "ok")
+    # plt.plot(xdata, ydata, "-ok")
+    # plt.plot(xdata, ydata, "-xk")
+    plt.plot(xdata, ydata, "-vk")
 
-    # Добавляем метки к осям
+    plt.grid()
     plt.xlabel("X")
     plt.ylabel("Y")
 
