@@ -8,10 +8,10 @@ readme = "README.md"
 packages = [{include = "fdtd_examples"}]
 
 [tool.poetry.dependencies]
-python = ">=3.10 <3.13"
-numpy = "^1.25.2"
-matplotlib = "^3.8.0"
-scipy = "^1.11.2"
+python = ">=3.11"
+numpy = "^2.3.2"
+matplotlib = "^3.10.5"
+scipy = "^1.16.1"
 
 
 [build-system]
