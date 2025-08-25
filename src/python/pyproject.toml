@@ -6,6 +6,7 @@ authors = ["Eugene Ilin <jenyay.ilin@gmail.com>"]
 license = "MIT"
 readme = "README.md"
 packages = [{include = "fdtd_examples"}]
+package-mode = false
 
 [tool.poetry.dependencies]
 python = ">=3.11"
