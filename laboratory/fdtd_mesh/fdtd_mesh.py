@@ -49,8 +49,8 @@ def fillMedium(layer: LayerDiscrete,
 
 if __name__ == '__main__':
     # Используемые константы
-    # Волновое сопротивление свободного пространства
-    W0 = 120.0 * np.pi
+    # Характеристическое сопротивление свободного пространства
+    Z0 = 120.0 * np.pi
 
     # Скорость света в вакууме
     c = 299792458.0
@@ -146,7 +146,7 @@ if __name__ == '__main__':
     # Коэффициенты для учета потерь
     loss = sigma * dt / (2 * eps * eps0)
     ceze = (1.0 - loss) / (1.0 + loss)
-    cezh = W0 / (eps * (1.0 + loss))
+    cezh = Z0 / (eps * (1.0 + loss))
 
     # Источник
     magnitude = 1.0
@@ -187,7 +187,7 @@ if __name__ == '__main__':
 
     for t in range(1, maxTime):
         # Расчет компоненты поля H
-        Hy = Hy + (Ez[1:] - Ez[:-1]) * Sc / (W0 * mu)
+        Hy = Hy + (Ez[1:] - Ez[:-1]) * Sc / (Z0 * mu)
 
         # Источник возбуждения с использованием метода
         # Total Field / Scattered Field
