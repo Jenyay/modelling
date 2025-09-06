@@ -35,8 +35,8 @@ class HarmonicPlaneWave:
 
 
 if __name__ == '__main__':
-    # Волновое сопротивление свободного пространства
-    W0 = 120.0 * np.pi
+    # Характеристическое сопротивление свободного пространства
+    Z0 = 120.0 * np.pi
 
     # Число Куранта
     Sc = 1.0
@@ -124,15 +124,15 @@ if __name__ == '__main__':
 
     for q in range(1, maxTime):
         # Расчет компоненты поля H
-        Hy = Hy + (Ez[1:] - Ez[:-1]) * Sc / (W0 * mu)
+        Hy = Hy + (Ez[1:] - Ez[:-1]) * Sc / (Z0 * mu)
 
         # Источник возбуждения с использованием метода
         # Total Field / Scattered Field
-        Hy[sourcePos - 1] -= (Sc / W0) * source.getE(0, q)
+        Hy[sourcePos - 1] -= (Sc / Z0) * source.getE(0, q)
 
         # Расчет компоненты поля E
         Hy_shift = Hy[: -1]
-        Ez[1:-1] = Ez[1: -1] + (Hy[1:] - Hy_shift) * Sc * W0 / eps[1: -1]
+        Ez[1:-1] = Ez[1: -1] + (Hy[1:] - Hy_shift) * Sc * Z0 / eps[1: -1]
 
         # Источник возбуждения с использованием метода
         # Total Field / Scattered Field

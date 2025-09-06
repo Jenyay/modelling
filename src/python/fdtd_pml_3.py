@@ -35,8 +35,8 @@ class GaussianPlaneWave:
 
 
 if __name__ == '__main__':
-    # Волновое сопротивление свободного пространства
-    W0 = 120.0 * np.pi
+    # Характеристическое сопротивление свободного пространства
+    Z0 = 120.0 * np.pi
 
     # Число Куранта
     Sc = 1.0
@@ -77,11 +77,11 @@ if __name__ == '__main__':
 
     # Коэффициенты для расчета поля E
     ceze = (1.0 - loss) / (1.0 + loss)
-    cezh = (Sc * W0) / (eps * (1.0 + loss))
+    cezh = (Sc * Z0) / (eps * (1.0 + loss))
 
     # Коэффициенты для расчета поля H
     chyh = (1.0 - loss_m) / (1.0 + loss_m)
-    chye = Sc / (mu * W0 * (1.0 + loss_m))
+    chye = Sc / (mu * Z0 * (1.0 + loss_m))
 
     # Усреднение коэффициентов на границах поглощающего слоя
     for x in layer_loss_x:
@@ -117,7 +117,7 @@ if __name__ == '__main__':
 
         # Источник возбуждения с использованием метода
         # Total Field / Scattered Field
-        Hy[sourcePos - 1] -= Sc / (W0 * mu[sourcePos - 1]) * source.getE(0, q)
+        Hy[sourcePos - 1] -= Sc / (Z0 * mu[sourcePos - 1]) * source.getE(0, q)
 
         # Расчет компоненты поля E
         Ez[1:-1] = ceze[1: -1] * Ez[1:-1] + cezh[1: -1] * (Hy[1:] - Hy[:-1])

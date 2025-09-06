@@ -35,8 +35,8 @@ class GaussianPlaneWave:
 
 
 if __name__ == '__main__':
-    # Волновое сопротивление свободного пространства
-    W0 = 120.0 * np.pi
+    # Характеристическое сопротивление свободного пространства
+    Z0 = 120.0 * np.pi
 
     # Число Куранта
     Sc = 1.0
@@ -87,22 +87,22 @@ if __name__ == '__main__':
 
     for q in range(maxTime):
         # Расчет компоненты поля H
-        Hy[:] = Hy + (Ez[1:] - Ez[:-1]) * Sc / (W0 * mu)
+        Hy[:] = Hy + (Ez[1:] - Ez[:-1]) * Sc / (Z0 * mu)
 
         # Источник возбуждения с использованием метода
         # Total Field / Scattered Field
-        Hy[tfsf_left - 1] -= (Sc / (W0 * mu[tfsf_left - 1])) * source.getE(tfsf_left, q)
-        Hy[tfsf_right - 1] += (Sc / (W0 * mu[tfsf_right - 1])) * source.getE(tfsf_right, q)
+        Hy[tfsf_left - 1] -= (Sc / (Z0 * mu[tfsf_left - 1])) * source.getE(tfsf_left, q)
+        Hy[tfsf_right - 1] += (Sc / (Z0 * mu[tfsf_right - 1])) * source.getE(tfsf_right, q)
 
-        # Hy[tfsf_left - 1] -= (Sc / (W0 * mu[tfsf_left - 1])) * source.getE(0, q)
-        # Hy[tfsf_right - 1] += (Sc / (W0 * mu[tfsf_right - 1])) * source.getE(tfsf_right - tfsf_left, q)
+        # Hy[tfsf_left - 1] -= (Sc / (Z0 * mu[tfsf_left - 1])) * source.getE(0, q)
+        # Hy[tfsf_right - 1] += (Sc / (Z0 * mu[tfsf_right - 1])) * source.getE(tfsf_right - tfsf_left, q)
 
         # Граничные условия для поля E
         Ez[0] = Ez[1]
         Ez[-1] = Ez[-2]
 
         # Расчет компоненты поля E
-        Ez[1:-1] = Ez[1: -1] + (Hy[1:] - Hy[: -1]) * Sc * W0 / eps[1: -1]
+        Ez[1:-1] = Ez[1: -1] + (Hy[1:] - Hy[: -1]) * Sc * Z0 / eps[1: -1]
 
         # Источник возбуждения с использованием метода
         # Total Field / Scattered Field

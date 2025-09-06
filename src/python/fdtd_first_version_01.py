@@ -9,8 +9,8 @@ import matplotlib.pyplot as plt
 
 
 if __name__ == '__main__':
-    # Волновое сопротивление свободного пространства
-    W0 = 120.0 * np.pi
+    # Характеристическое сопротивление свободного пространства
+    Z0 = 120.0 * np.pi
 
     # Число Куранта
     Sc = 1.0
@@ -37,11 +37,11 @@ if __name__ == '__main__':
     for q in range(1, maxTime):
         # Расчет компоненты поля H
         for m in range(0, maxSize - 1):
-            Hy[m] = Hy[m] + (Ez[m + 1] - Ez[m]) * Sc / W0
+            Hy[m] = Hy[m] + (Ez[m + 1] - Ez[m]) * Sc / Z0
 
         # Расчет компоненты поля E
         for m in range(1, maxSize):
-            Ez[m] = Ez[m] + (Hy[m] - Hy[m - 1]) * Sc * W0
+            Ez[m] = Ez[m] + (Hy[m] - Hy[m - 1]) * Sc * Z0
 
         # Источник возбуждения
         Ez[sourcePos] += np.exp(-(q - 0.5 - 30.0) ** 2 / 100.0)

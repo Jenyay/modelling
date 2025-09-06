@@ -34,8 +34,8 @@ class GaussianPlaneWave:
 
 
 if __name__ == '__main__':
-    # Волновое сопротивление свободного пространства
-    W0 = 120.0 * numpy.pi
+    # Характеристическое сопротивление свободного пространства
+    Z0 = 120.0 * numpy.pi
 
     # Число Куранта
     Sc = 1.0
@@ -82,18 +82,18 @@ if __name__ == '__main__':
         Hy[-1] = Hy[-2]
 
         # Расчет компоненты поля H
-        Hy[:-1] = Hy[:-1] + (Ez[1:] - Ez[:-1]) * Sc / W0
+        Hy[:-1] = Hy[:-1] + (Ez[1:] - Ez[:-1]) * Sc / Z0
 
         # Источник возбуждения с использованием метода
         # Total Field / Scattered Field
-        Hy[sourcePos - 1] -= (Sc / W0) * source.getE(sourcePos, q)
-        # Hy[sourcePos - 1] -= (Sc / W0) * source.getE(0, q)
+        Hy[sourcePos - 1] -= (Sc / Z0) * source.getE(sourcePos, q)
+        # Hy[sourcePos - 1] -= (Sc / Z0) * source.getE(0, q)
 
         # Граничные условия для поля E
         Ez[0] = Ez[1]
 
         # Расчет компоненты поля E
-        Ez[1:] = Ez[1:] + (Hy[1:] - Hy[:-1]) * Sc * W0
+        Ez[1:] = Ez[1:] + (Hy[1:] - Hy[:-1]) * Sc * Z0
 
         # Источник возбуждения с использованием метода
         # Total Field / Scattered Field

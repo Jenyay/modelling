@@ -23,8 +23,8 @@ import tools
 
 
 if __name__ == '__main__':
-    # Волновое сопротивление свободного пространства
-    W0 = 120.0 * np.pi
+    # Характеристическое сопротивление свободного пространства
+    Z0 = 120.0 * np.pi
 
     # Число Куранта
     Sc = 1.0
@@ -57,24 +57,24 @@ if __name__ == '__main__':
 
     for q in range(1, maxTime):
         # Расчет компоненты поля H
-        Hy[:-1] = ne.evaluate('Hy_old + (Ez_left - Ez_right) * Sc / W0', 
+        Hy[:-1] = ne.evaluate('Hy_old + (Ez_left - Ez_right) * Sc / Z0', 
                               global_dict={
                                   'Hy_old': Hy[:-1],
                                   'Ez_left': Ez[1:],
                                   'Ez_right': Ez[:-1]
                                   }
                               )
-        # Hy[:-1] = Hy[:-1] + (Ez[1:] - Ez[:-1]) * Sc / W0
+        # Hy[:-1] = Hy[:-1] + (Ez[1:] - Ez[:-1]) * Sc / Z0
 
         # Расчет компоненты поля E
-        Ez[1:] = ne.evaluate('Ez_old + (Hy_right - Hy_left) * Sc * W0', 
+        Ez[1:] = ne.evaluate('Ez_old + (Hy_right - Hy_left) * Sc * Z0', 
                              global_dict={
                                  'Ez_old': Ez[1:],
                                  'Hy_right': Hy[1:],
                                  'Hy_left': Hy[:-1]
                                  }
                              )
-        # Ez[1:] = Ez[1:] + (Hy[1:] - Hy[:-1]) * Sc * W0
+        # Ez[1:] = Ez[1:] + (Hy[1:] - Hy[:-1]) * Sc * Z0
 
         # Источник возбуждения
         Ez[sourcePos] += np.exp(-(q - 0.5 - 30.0) ** 2 / 100.0)
