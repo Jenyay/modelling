@@ -68,7 +68,7 @@ if __name__ == '__main__':
 
     # Потери в среде. loss = sigma * dt / (2 * eps * eps0)
     loss = np.zeros(maxSize)
-    loss[layer_loss_x:] = 0.01
+    loss[layer_loss_x:] = 0.02
 
     # Магнитные потери в среде. loss_m = sigma_m * dt / (2 * mu * mu0)
     loss_m = np.zeros(maxSize - 1)
