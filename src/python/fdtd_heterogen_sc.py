@@ -50,11 +50,11 @@ if __name__ == '__main__':
     sourcePos = 50
 
     # Датчики для регистрации поля
-    probesPos = [25, 75]
+    probesPos = [25, 75, 500]
     probes = [tools.Probe(pos, maxTime) for pos in probesPos]
 
     # Положение начала диэлектрика
-    layer_x = 100
+    layer_x = 300
 
     # Параметры среды
     # Диэлектрическая проницаемость
