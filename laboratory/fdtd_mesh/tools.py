@@ -4,7 +4,7 @@
 методом FDTD
 '''
 
-import pylab
+import matplotlib.pyplot as plt
 import numpy as np
 import numpy.typing as npt
 from typing import List, Optional
@@ -52,10 +52,10 @@ class AnimateFieldDisplay:
         self._xList = np.arange(self.maxXSize) * self._dx
 
         # Включить интерактивный режим для анимации
-        pylab.ion()
+        plt.ion()
 
         # Создание окна для графика
-        self._fig, self._ax = pylab.subplots(
+        self._fig, self._ax = plt.subplots(
             figsize=(10, 6.5))
 
         if self._title is not None:
@@ -118,7 +118,7 @@ class AnimateFieldDisplay:
         '''
         Остановить анимацию
         '''
-        pylab.ioff()
+        plt.ioff()
 
     def updateData(self, data: npt.NDArray[float], timeCount: int):
         '''
@@ -142,7 +142,7 @@ def showProbeSignals(probes: List[Probe],
     minYSize, maxYSize - интервал отображения графика по оси Y.
     '''
     # Создание окна с графиков
-    fig, axes_list = pylab.subplots(nrows=len(probes),
+    fig, axes_list = plt.subplots(nrows=len(probes),
                                     figsize=(10, 6.5),
                                     tight_layout={'w_pad': 0.7, 'h_pad': 0.7})
     fig.suptitle('Сигналы в датчиках')
@@ -170,4 +170,4 @@ def showProbeSignals(probes: List[Probe],
         legend_obj.set_draggable(True)
 
     # Показать окно с графиками
-    pylab.show()
+    plt.show()
